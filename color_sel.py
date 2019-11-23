@@ -13,6 +13,11 @@ ysize = image.shape[0]
 xsize = image.shape[1]
 
 color_select = np.copy(image)
+region_select = np.copy(image)
+
+left_bottom = [130, 535]
+right_bottom = [790, 540]
+apex = [480, 335]
 
 red_thershold = 210
 green_thershold = 210
