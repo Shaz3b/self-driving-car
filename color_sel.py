@@ -14,9 +14,9 @@ xsize = image.shape[1]
 
 color_select = np.copy(image)
 
-red_thershold = 0
-green_thershold = 0
-blue_thershold = 0
+red_thershold = 210
+green_thershold = 210
+blue_thershold = 210
 rgb_thershold = [red_thershold,green_thershold,blue_thershold]
 
 thersholds = (image[:,:,0] < rgb_thershold[0]) \
@@ -26,8 +26,4 @@ color_select[thersholds] = [0,0,0]
 
 plt.imshow(color_select)
 plt.show()
-
-               
-
-
 
